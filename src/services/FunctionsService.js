@@ -13,10 +13,14 @@ class FunctionsService {
     if (AppState.cheese >= foundUpgrade.price) {
       foundUpgrade.quantity += 1
       AppState.cheese -= foundUpgrade.price
+      increasePrices(upgradeName)
     } else {
       window.alert("Not enough cheese silly")
     }
+  }
 
+  upgradePrices(upgradeName) {
+    let increasinCost = 
   }
 }
 export const functionsService = new FunctionsService()
